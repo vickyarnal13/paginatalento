@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prociono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&family=Prociono&display=swap');
 
 /*Reseteamos los margenes que vienen predefinidos*/
 *{
-    font-family: "Playwrite GB S", cursive;
+    font-family: "Playfair Display", serif;
     margin:0;
     padding: 0;
     box-sizing: border-box;
