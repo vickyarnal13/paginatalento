@@ -17,6 +17,7 @@ h1{
     text-align: center; /*esta prop es para centrar el contenido de las etiquetas*/
     padding-top: 20%;
 }
+
 h2{
     font-size: 2rem;
     text-align: center;
@@ -64,7 +65,7 @@ h3{
     z-index:1000; /*De esta forma le damos prioridad frente a otros elementos y no se sobrepisa al mover*/
     nav{
         flex-wrap: wrap;
-        width:50%;
+        width:40%;
         ul{
             list-style: none;
             display: flex;
@@ -74,7 +75,7 @@ h3{
             a{
                 text-decoration: none;
                 color: black;
-                font-size:45px;
+                font-size:40px;
             }
 
             }
@@ -86,7 +87,7 @@ h3{
 
    
 .header{
-   height: 15vh; 
+   height: 10vh; 
 }
 
 header,footer
@@ -124,13 +125,26 @@ header,footer
     }
 }
 
-.footer{
-    display: flex;
-    width: 100%;
-    background-color: #333;
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ulHeader {
+        flex-wrap: wrap; /* Permite que los elementos se acomoden en varias filas si es necesario */
+        justify-content: center;
+    }
+
+    .linkHeader {
+        font-size: 18px; /* Reduce el tamaño de la fuente */
+        margin: 5px;     /* Ajusta el margen para evitar que se junten demasiado */
+    }
+
+    .logo {
+        width: 150px; /* Ajusta el tamaño del logo si es necesario */
+    }
 }
-
-
 /*GALERIA*/
 .galeriaGrid
 {
@@ -177,24 +191,6 @@ header,footer
 
 
 
-/*FOOTER CON FLEX*/
-.itemsFooter
-{
-display:flex;
-margin: 0 auto;
-width: 90%;
-align-items: center;
-justify-content: space-around;
-flex-direction: row;
-text-align: justify;
-font-size: 30px;
-color: black;
-a{
-   color: black;
-}
-
-gap: 50px; 
-}
 
 /* De esta forma aplicamos un tipo de selector clasificador, solo a unos textos específicos*/
 
@@ -212,32 +208,38 @@ gap: 50px;
 
 
 /*ABOUT CARITO SECCIÓN*/
-.sobreMi{
-    .contenedorSobreMi
-    {
-        margin-top:20px;
-        display: flex;
+  .sobreMi{
+    text-align: center;
+    padding: 20px;
+    height: 60vh;
+    .contenedorSobreMi{
         align-items: center;
-        flex-wrap: wrap;
-        .sobreMiImagen{
+        display:flex;
+        height: 100%;
+        .uno{
             width: 50%;
-            img{
-                width:80%;
-                border-radius: 50%;
+            .imagen{
+                width: 80%;
+                height: 80%;
+                object-fit: cover;
+                border-radius: 40%;
             }
         }
-        .sobreMiTexto{
-            margin: 0 auto;
-            width: 35%;
-            p{
-                line-height: 1.5;
-                font-size:1.5rem;
-            }
-
+        .dos{
+            width:50%;
         }
     }
-
+  }
+    
+  @media screen and (max-width: 768px) {
+    .ulHeader {
+        font-size: 0.8em; /* Reducción del tamaño de la fuente */
+    }
+    .listaItem {
+        margin: 0 5px; /* Espaciado más pequeño entre los elementos */
+    }
 }
+
 /* De esta forma agregamos la imagen ppal en el index*/
 .principalIndex
 {
@@ -274,6 +276,7 @@ gap: 50px;
         }
     }
 }
+
 
 
 /*De esta forma hacemos el menú de mis cursos*/
@@ -314,5 +317,51 @@ gap: 50px;
     width: 350px;
     border-radius: 10px;
     flex-grow: 2;
+}
+
+@media screen and (max-width:768px)
+{
+    .cursosDestacados{
+        justify-content: center;
+        text-align: center;
+        
+    }
+}
+
+
+.footer{
+    display: flex;
+    height: 30vh;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(168, 95, 224);
+    font-size: 30px;
+    ul{
+        list-style: none;
+        a{
+            text-decoration: none;
+            font-size: 1.5em;
+        }
+        .fa-instagram{
+            font-size: 3em;
+        }
+    }
+    p{
+        font-size: 1.5em;
+    }
+   
+}
+
+/* Media query para mejorar el responsive en el footer */
+@media screen and (max-width: 768px){
+    .footer
+    {
+        flex-direction: column; /*cambiamos el flex direction a columnas*/
+        height: initial;
+        align-items: start;
+        row-gap: 20px; /*espacio */
+        
+    }
 }
 
