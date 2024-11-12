@@ -77,7 +77,6 @@ h3 {
 /*NAVEGACION EN EL HEADER*/
 .header
 {
-    height: 8vh; /* Ajusta la altura del header para que ocupe menos espacio */
     justify-content: space-between;
     align-items: center;
     position: sticky; /*De esta forma el header nos acompaña*/
@@ -91,14 +90,11 @@ h3 {
             display: flex;
             justify-content: flex-end;
             width: 100%;
-            gap: 20px; /* Agrega espacio entre cada ancla */
-            padding-right: 20px; /* Margen a la derecha para alinear mejor */
             li{
             a{
                 text-decoration: none;
                 color: black;
-                font-size:20px;
-                padding: 5px 10px; /* Espaciado más pequeño alrededor de cada enlace */
+                font-size:40px;
             }
 
             }
@@ -108,6 +104,10 @@ h3 {
     };
 
 
+   
+.header{
+   height: 8vh; 
+}
 
 header,footer
 {
