@@ -14,6 +14,7 @@
 
 body {
     font-size: 14px; /* Tamaño base */
+    max-width: 100vw;
 }
 
 h1 {
@@ -84,7 +85,7 @@ h3 {
     z-index:1000; /*De esta forma le damos prioridad frente a otros elementos y no se sobrepisa al mover*/
     nav{
         flex-wrap: wrap;
-        width:40%;
+        width:100%;
         ul{
             list-style: none;
             display: flex;
@@ -363,6 +364,8 @@ header,footer
     padding: 20px;
     background-color: rgb(168, 95, 224);
     font-size: 30px;
+    width: 100%;
+    overflow-x: hidden;
     ul{
         list-style: none;
         a{
