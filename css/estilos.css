@@ -341,8 +341,8 @@ header,footer
 
 
 .cursosDestacados .flex-item img {
-    width: 350px;
-    border-radius: 10px;
+    width: 150px;
+    border-radius: 15px;
     flex-grow: 2;
 }
 
