@@ -374,6 +374,7 @@ header,footer
         a{
             text-decoration: none;
             font-size: 1em;
+            color: black;
         }
         .fa-instagram{
             font-size: 3em;
