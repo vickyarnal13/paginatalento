@@ -347,7 +347,7 @@ header,footer
 
 .footer{
     display: flex;
-    height: 20vh;
+    height: 30vh;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
